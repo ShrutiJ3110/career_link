@@ -1,0 +1,227 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4; */
+}
+
+/* Modal Container */
+.container, .login-modal {
+    width: 100%;
+    max-width: 400px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.tab {
+    background: none;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #999;
+}
+
+.tab.active {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+}
+
+/* Tab Content */
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Input Fields */
+.input-field, .signup-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Google and Social Login Buttons */
+.google-login, .google-btn, .facebook-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.google-login, .google-btn {
+    background-color: #4285f4;
+}
+
+.google-login:hover, .google-btn:hover {
+    background-color: #357ae8;
+}
+
+.facebook-btn {
+    background-color: #1877f2;
+}
+
+.facebook-btn:hover {
+    background-color: #155cba;
+}
+
+/* Divider */
+.divider {
+    text-align: center;
+    margin: 15px 0;
+    color: #999;
+    font-size: 14px;
+    position: relative;
+}
+
+.divider::before, .divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 45%;
+    height: 1px;
+    background: #ccc;
+}
+
+.divider::before { left: 0; }
+.divider::after { right: 0; }
+
+/* Buttons */
+.login-btn, .signup-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.login-btn:hover, .signup-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Forgot Password */
+.forgot-password {
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Register Section */
+.register, .signup-form p {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+
+.register a, .signup-form p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.register a:hover, .signup-form p a:hover {
+    text-decoration: underline;
+}
+
+/* Signup Form */
+.signup-form {
+    flex: 1;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-form h2 {
+    color: #1e3a8a;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.signup-form label {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Terms and Conditions */
+.terms {
+    font-size: 12px;
+    color: #555;
+    text-align: left;
+    margin: 15px 0;
+}
+
+.terms a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+/* Signup Page Layout */
+.signup-container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Illustration Section */
+.signup-illustration {
+    flex: 1;
+    background-color: #1e3a8a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.signup-illustration img {
+    width: 80%;
+    height: auto;
+}
