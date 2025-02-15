@@ -1,3 +1,4 @@
+/* Center the form in the viewport */
 .container, .form-container {
     display: flex;
     flex-direction: column;
@@ -5,47 +6,76 @@
     justify-content: center;
     height: 100vh;
     text-align: center;
-    background-color: #f4f4f4;
-    color:black;
-  }
-  
-  .auth-form {
+    background-color: #f0f0f0;
+    color: black;
+}
+
+/* Form Styling */
+.auth-form {
     display: flex;
     flex-direction: column;
     background: white;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    font-size: 20px;
-  }
-  
-  button {
-    margin: 10px;
-    padding: 10px 20px;
-    font-size: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    width: 380px;
+    font-size: 18px;
+    gap: 15px;
+}
+
+/* Input Fields */
+input, select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f9f9f9;
+    outline: none;
+    transition: border 0.3s;
+}
+
+input:focus, select:focus {
+    border: 1px solid #007bff;
+}
+
+/* Button Styling */
+button {
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     background-color: #007bff;
     color: white;
     transition: 0.3s;
-  }
-  
-  button:hover {
+    width: 100%;
+}
+
+button:hover {
     background-color: #0056b3;
-  }
-  
-  input, select {
-    margin: 10px;
-    padding: 10px;
-    width: 250px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .button-group {
-    display: flex;
-    gap: 15px;
-  }
-  
+}
+
+/* Error Message */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Form Footer Links */
+p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+p a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+}

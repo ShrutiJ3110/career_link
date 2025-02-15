@@ -39,6 +39,7 @@ function Signup() {
         </select>
         <button type="submit">Sign Up</button>
       </form>
+      <p>If you are  registered, <a href="/login">Login here</a></p>
     </div>
     </div>
   );
